@@ -1,8 +1,11 @@
 <?php 
     //Loading php dotenv file:
     require("vendor/autoload.php");
-    //$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
-    //$dotenv->load();
+    if (file_exists(".env")) {
+        $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+        $dotenv->load();
+    }
+    //
     
     //Connecting to database:
     $connection = mysqli_connect(
