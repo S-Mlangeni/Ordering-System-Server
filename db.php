@@ -1,9 +1,9 @@
 <?php 
     //Loading php dotenv file:
     require("vendor/autoload.php");
-    $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+    $dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . "./app");
     $dotenv->load();
-
+    
     //Connecting to database:
     $connection = mysqli_connect(
         $_ENV["DB_HOST"], 
