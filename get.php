@@ -1,5 +1,5 @@
 <?php 
-    header('Access-Control-Allow-Origin: http://localhost/Drinks_Ordering_System/Ordering_System_Client, https://ordering-system-client.herokuapp.com');
+    header('Access-Control-Allow-Origin: http://localhost');
     header('Access-Control-Allow-Methods: GET');
     header("Access-Control-Allow-Headers: Origin, Content-Type, X-Auth-Token , Authorization");
     
