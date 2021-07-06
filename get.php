@@ -1,8 +1,4 @@
 <?php 
-    header('Access-Control-Allow-Origin: http://localhost');
-    header('Access-Control-Allow-Methods: GET');
-    header("Access-Control-Allow-Headers: Origin, Content-Type, X-Auth-Token , Authorization");
-    
     include "./db.php";
 
     $ourQueryString = "SELECT * FROM orders"; 
