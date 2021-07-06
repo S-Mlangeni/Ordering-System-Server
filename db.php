@@ -1,7 +1,7 @@
 <?php 
     //Loading php dotenv file:
     require("vendor/autoload.php");
-    $dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . "../");
+    $dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . "./../");
     $dotenv->load();
     
     //Connecting to database:
